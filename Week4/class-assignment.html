@@ -1,0 +1,81 @@
+<html>
+
+<head>
+
+<style>
+
+* {
+	background-color:thistle;
+	font-family:helvetica;	
+ }
+
+ #fullNameContent {
+ 	margin-top:400px;
+ }
+
+.classyb {
+	background-color: none; 
+  	border: white solid 2px;
+ 	color: white;
+  	padding: 16px 32px;
+ 	text-align: center;
+ 	text-decoration: none;
+	display: inline-block;
+  	font-size: 16px;
+ 	margin: 4px 2px;
+ 	-webkit-transition-duration: 0.4s; 
+ 	transition-duration: 0.4s;
+ 	cursor: pointer;
+}
+
+.classyb:hover {
+	background-color:white;
+	color:thistle;
+	border:white solid 2px;
+	-webkit-transition-duration:0.4s;
+	transition-duration:0.4s;
+	cursor:pointer;
+
+}
+
+.womp {
+	font-size:20px;
+	color:black;
+	letter-spacing: 1px;
+	padding-bottom:25px;
+
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+<center>
+
+	<div id="fullNameContent"></div>
+
+	<div class="womp">Hey, nice to meet you! Send me an email!</div>
+
+	<button class="classyb" onclick="fullName.notice()">Let's chat!</button>
+</center>
+<script>
+
+	var fullName = {
+		name: 'Emily',
+		middle: 'Lynn',
+		last: 'Caulfield',
+		email: 'mynameis@emilynncaulfield.com',
+			notice:function() {
+				alert('Hi, my name is ' + fullName.name + ' ' +fullName.middle + ' ' + fullName.last + ' ' + 'Send me an email over at ' + fullName.email );
+			}
+}
+
+</script>
+</body>
+
+
+
+</html>

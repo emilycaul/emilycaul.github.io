@@ -1,0 +1,30 @@
+var myArray = [1,2,3]
+myArray[1]
+
+var hair = {
+	name = 'John',
+	color = 'Brown',
+	type = 'Curly',
+
+}
+
+hair['color']
+hair.color
+
+x = hair;
+x.color = "black"
+
+hair.color='black'
+
+function myFirstFunction (param1, param2) {
+	
+}
+
+function myFirstObjectConstructor(name,color,type) {
+	this.name = name;
+	this.color = color;
+	this.type = type;
+	
+}
+
+var myObject = new myFirstHairObjectConstructor('John', 'Brown', 'Curly');
