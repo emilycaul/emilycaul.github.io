@@ -1,0 +1,59 @@
+var exampleString = 'single quote';
+var exampleString2 = "double quotes";
+var exampleString3 = `backtick string`;
+
+var exampleNumber = 1;
+
+var exampleBoolean = true;
+var exampleBoolean = false;
+
+Null
+
+Undefined
+
+Arrays
+
+var array1 = ['string1', 'string2', 'string3', 4]
+var array2 = new Array(1,2,3);
+var array3 = new Array();
+
+array1[1]
+
+function myFirstFunction() {
+	
+	alert('hello world');
+}
+
+
+Javascript operators
+
++ add
+- subtract
+/ divide
+* multiply
+% modulus 
+
+var myVar = "some value"
+==
+
+a = b
+a == b
+
+!= 
+> greater than
+< less than
+>=
+<=
+
+&& Returns true if both statements are true
+|| returns true if one statement is true
+
+
+
+
+
+
+
+
+
+

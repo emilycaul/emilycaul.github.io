@@ -1,0 +1,87 @@
+<html>
+
+<head>
+	<style>
+		body {
+			background-color:#FFD700;
+		}
+
+		.stylin {
+			font-family:helvetica;
+			margin-top:350px;
+
+
+
+		}
+
+		#moodStatement {
+			margin-top:20px;
+			color:white;
+			letter-spacing: 1px;
+			font-size:25px;
+		}
+
+	</style>
+
+</head>
+
+<center>
+<body>
+	<div class="stylin">
+		<h1 style="text-transform:uppercase; color:white; letter-spacing: 10px;"> Feeling Moody</h1> 
+		<button id="moodButton" onClick="changeMood()" value="0">
+		Change my mood</button>
+
+		<div id="moodStatement">We're happy</div>
+	</div>
+		
+	<script>
+
+text =""
+
+function changeMood(){
+	button = document.getElementById("moodButton")
+	if (button.value == '0') {
+		text ="Sad day";
+		document.getElementById('moodStatement').innerHTML = text;
+		document.body.style.backgroundColor = "5465FF";
+		button.value = '1';
+
+	} else if (button.value == '1') {
+		text = "feeling bright";
+		document.getElementById('moodStatement').innerHTML = text;
+				document.body.style.backgroundColor = "00FFEC";
+		button.value = '2';
+
+	} else if (button.value == '2') {
+		text = "we're KILLING it";
+		document.getElementById('moodStatement').innerHTML = text;
+		document.body.style.backgroundColor = "FF0000";
+		button.value = '3';
+
+	}	else if (button.value == '3') {
+		text = "vibin";
+		document.getElementById('moodStatement').innerHTML = text;
+		document.body.style.backgroundColor = "9B8DC2";
+		button.value = '4';
+
+	} 	else if (button.value == '4') {
+		text = "asleep";
+		document.getElementById('moodStatement').innerHTML = text;
+		document.body.style.backgroundColor = "0C064E";
+		button.value = '5';
+
+	} 	else if (button.value == '5') {
+		text = "morning";
+		document.getElementById('moodStatement').innerHTML = text;
+		document.body.style.backgroundColor = "39ACF4";
+		button.value = '0';
+
+	}
+
+
+}
+</script>
+</body>
+</center>
+</html>
