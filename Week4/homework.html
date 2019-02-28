@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Canvas Patterns</title>
+		<style type="text/css">
+
+		body {
+			background-color:thistle;
+		}
+		#Canvas1 {
+			border: none;
+		}
+
+		* { 
+			font-family:helvetica;
+			color:black;
+			letter-spacing: 2px;
+		}
+		</style>
+		<script>
+			window.onload = function() {
+				var theCanvas = document.getElementById('Canvas1');
+				if (theCanvas && theCanvas.getContext) {
+					var ctx = theCanvas.getContext("2d");
+					if (ctx) {
+						// create a pattern from another canvas
+						var patCanvas = document.getElementById('patCan');
+						var patCtx = patCanvas.getContext("2d");
+						// draw a line in the canvas
+						patCtx.strokeStyle = "white";
+						patCtx.lineWidth=100;
+						patCtx.beginPath();
+						patCtx.moveTo(0,0);
+						patCtx.lineTo(10,10);
+						patCtx.stroke();
+						
+						// now use that canvas as a pattern
+						var strokePat = ctx.createPattern(patCanvas,"repeat");
+						ctx.strokeStyle = strokePat;
+						ctx.lineWidth = 600;
+						ctx.strokeRect(10,10,500,500);
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Drawing Patterns</h1>
+		<canvas id="Canvas1" width="500" height="500"></canvas>
+		<canvas id="patCan" width="15" height="15"></canvas>
+		
+	</body>
+</html>
